@@ -1,0 +1,16 @@
+<!ELEMENT concesionario (coche*)>
+<!ELEMENT coche (matricula+,marca+, modelo+, fechaMatriculacion+, color?)>
+<!ATTLIST coche id ID #REQUIRED>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT fechaMatriculacion (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT marca (nombre+,pais+,logo+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT modelo (nombre+,tipo+,precio+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+
+

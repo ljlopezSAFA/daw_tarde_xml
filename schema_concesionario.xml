@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Elementos simples -->
+<xs:element name="matricula" type="xs:string"/>
+<xs:element name="nombre="xs:string"/>
+<xs:element name="pais="xs:string"/>
+<xs:element name="logo" type="xs:uri-reference"/>
+<xs:element name="precio="xs:float"/>
+<xs:element name="tipo="xs:string"/>
+<xs:element name="fechaMatriculacion="xs:date"/>
+<xs:element name="color="xs:string"/>
+
+
+<!-- Atributos -->
+<xs:attribute name="id" type="xs:string"/>
+
+<!-- Elementos Complejos -->
+<xs:element name="marca" minOccurs="1">
+	 <xs:complexType>
+		<xs:sequence>
+			 <xs:element ref="nombre"/>
+			 <xs:element ref="pais"/>
+			 <xs:element ref="logo"/>
+		</xs:sequence>
+	 </xs:complexType>
+</xs:element>
+
+<xs:element name="modelo" minOccurs="1">
+	 <xs:complexType>
+		<xs:sequence>
+			 <xs:element ref="nombre"/>
+			 <xs:element ref="tipo"/>
+			 <xs:element ref="precio"/>
+		</xs:sequence>
+	 </xs:complexType>
+</xs:element>
+
+<xs:element name="coche" maxOccurs = "unbounded">
+	 <xs:complexType>
+		 <xs:simpleContent>
+			 <xs:extension base="xs:string">
+				<xs:attribute ref="id"/>
+			 </xs:extension>
+		 </xs:simpleContent>
+		 <xs:sequence>
+			 <xs:element ref="matricula"/>
+			 <xs:element ref="marca"/>
+			 <xs:element ref="modelo"/>
+			 <xs:element ref="fechaMatriculacion"/>
+			 <xs:element ref="color"/>
+		</xs:sequence>
+	 </xs:complexType>
+</xs:element>
+
+
+
+<!-- Elementos Raiz -->
+<xs:element name="concesionario">
+	 <xs:complexType>
+		<xs:sequence>
+			 <xs:element ref="nombre"/>
+		</xs:sequence>
+	 </xs:complexType>
+</xs:element>

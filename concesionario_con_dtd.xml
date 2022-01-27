@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
+	<!DOCTYPE concesionario [
+	<!ELEMENT concesionario (coche*)>
+	<!ELEMENT coche (matricula+,marca+, modelo+, fechaMatriculacion+, color?)>
+	<!ATTLIST coche id CDATA  #REQUIRED>
+	<!ELEMENT matricula (#PCDATA)>
+	<!ELEMENT fechaMatriculacion (#PCDATA)>
+	<!ELEMENT color (#PCDATA)>
+	<!ELEMENT marca (nombre+,pais+,logo+)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT pais (#PCDATA)>
+	<!ELEMENT logo (#PCDATA)>
+	<!ELEMENT modelo (nombreModelo+,tipo+,precio+)>
+	<!ELEMENT nombreModelo (#PCDATA)>
+	<!ELEMENT tipo (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+]>
+<concesionario>
+	<coche id ="1">
+		<matricula>8658KLG</matricula>
+		<marca>
+			<nombre>PEUGEOT</nombre>
+			<pais>FRANCIA</pais>
+			<logo>https://img.autocosmos.com/noticias/fotos/preview/NAZ_adc988896c844b4bbf0c251572d053ab.jpg</logo>
+		</marca>
+		<modelo>
+			<nombreModelo>206</nombreModelo>
+			<tipo>BERLINA</tipo>
+			<precio>9.800</precio>
+		</modelo>
+		<fechaMatriculacion>2019-11-12</fechaMatriculacion>
+		<color>rojo</color>
+	</coche>
+	<coche id="2">
+		<matricula>1234AAA</matricula>
+		<marca>
+			<nombre>VOLKSWAGEN</nombre>
+			<pais>ALEMANIA</pais>
+			<logo>https://brandemia.org/contenido/subidas/2019/09/volskwagen-nuevo-logo.jpg</logo>
+		</marca>
+		<modelo>
+			<nombreModelo>Touareg</nombreModelo>
+			<tipo>TODOTERRENO</tipo>
+			<precio>26.000</precio>
+		</modelo>
+		<fechaMatriculacion>2021-04-06</fechaMatriculacion>
+		<color>blanco</color>
+	</coche>
+</concesionario>
