@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
-<!-- <!DOCTYPE concesionario SYSTEM "C:\Users\34638\Desktop\XML ejemplo\dtd_concesionario.dtd"> -->
-<concesionario>
-	<coche id = "1">
+﻿<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
+<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema_concesionario.xml">
+	<coche id = "1" urlFoto="https://i.pinimg.com/originals/a4/30/fd/a430fda04c5be5420a6f8aa484f47945.png">
 		<matricula>8658KLG</matricula>
 		<marca>
 			<nombre>PEUGEOT</nombre>
