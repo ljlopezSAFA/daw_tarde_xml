@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="concesionario.xsl"?>
 <concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema_concesionario.xml">
-	<coche id = "1" urlFoto="https://i.pinimg.com/originals/a4/30/fd/a430fda04c5be5420a6f8aa484f47945.png">
+	<coche id = "1" urlFoto="https://www.autofacil.es/wp-content/uploads/2021/05/apertura3-2.jpg">
 		<matricula>8658KLG</matricula>
 		<marca>
 			<nombre>PEUGEOT</nombre>
@@ -15,7 +16,7 @@
 		<fechaMatriculacion>2019-11-12</fechaMatriculacion>
 		<color>rojo</color>
 	</coche>
-	<coche id="2">
+	<coche id="2" urlFoto="https://img.tipcars.com/fotky_velke/16287086_1/1570177279/E/volkswagen-touareg-r-line-v6-3-0tdi.jpg">
 		<matricula>1234AAA</matricula>
 		<marca>
 			<nombre>VOLKSWAGEN</nombre>
@@ -31,4 +32,5 @@
 		<color>blanco</color>
 	</coche>
 </concesionario>
+
 

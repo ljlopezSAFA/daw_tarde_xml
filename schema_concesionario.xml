@@ -9,35 +9,16 @@
 <xs:element name="precio" type="xs:float"/>
 <xs:element name="tipo" type="xs:string"/>
 <xs:element name="fechaMatriculacion" type="xs:date"/>
-
+<xs:element name="color" type="xs:string"/>
 
 
 
 
 <!-- Atributos -->
 <xs:attribute name="id" type="xs:string"/>
+<xs:attribute name="urlFoto" type="xs:string"/>
 
 <!-- Elementos Complejos -->
-
-
-<xs:element name="color" type="xs:string">
-	<xs:complexType>
-		<xs:attribute name="tono">
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="claro" />
-					<xs:enumeration value="oscuro" />
-					<xs:enumeration value="medio" />
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:attribute>
-	</xs:complexType>
-</xs:element>
-
-
-
-
-
 <xs:element name="marca">
 	 <xs:complexType>
 		<xs:sequence>
@@ -68,6 +49,7 @@
 			 <xs:element ref="color"/>
 		</xs:sequence>
 		 <xs:attribute ref="id"/>
+		 <xs:attribute ref="urlFoto"/>
 	 </xs:complexType>
 </xs:element>
 
